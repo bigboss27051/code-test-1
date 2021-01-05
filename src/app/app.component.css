@@ -1,0 +1,35 @@
+.root {
+  width: 100vw;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.left-content {
+  width: 200px;
+  height: 100vh;
+  border-right: 2px solid black;
+}
+
+.right-content {
+  width: 300px;
+  height: 100vh;
+}
+
+.center-content {
+  flex: 1;
+  height: 100vh;
+  border-right: 2px solid black;
+}
+
+@media only screen and (max-width: 600px) {
+  .center-content {
+    min-width: 100px;
+  }
+  .root {
+    overflow-x: scroll;
+  }
+}
